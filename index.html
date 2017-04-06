@@ -3,18 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Air</title>
+  <title>Transaero Airways</title>
   <meta name='keywords' content="keywords here">
   <meta name="description" content="description here">
   <link href="css/normalize.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- normalize.css -->
+  <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- main file of css -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <style>
 
   </style>
-  <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
 </head>
 
 <body>
@@ -34,16 +35,20 @@
           <div class="main-header__country-element"><a href="#">USA site</a></div>
           <div class="main-header__country-element"><a href="#">Deutsch site</a></div>
           <div class="main-header__country-element">
-            <div class="main-header__language-current-element">Россия:</div>
+            <div class="main-header__language-current-element">Россия:&nbsp;</div>
             <a href="#">Switch to english</a>
           </div>
         </div>
         <div class="main-header__online-table-and-register main-header__online-table-and-register_color_blue">
-          <div class="main-header__online-table"><a href="#">Онлайн-табло</a></div>
+          <div class="main-header__online-table">
+            <img src="img/clock.png" width="20px" height="20px">
+            <a href="#">Онлайн-табло</a>
+          </div>
           <div class="main-header__register"><a href="#">Вход и регистрация</a></div>
         </div>
         <div class="main-header__close">
-          <div></div><div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
@@ -83,11 +88,23 @@
         </div>
       </div>
     </div>
+    <div class="slidr__container slidr__container_show">
+      <div id="slidr-id" style="display: inline-block">
+        <div class="slidr__content" data-slidr="one">
+          <p>Открывайте мир</p>
+          <p>вместе с Трансаэро <img src="img/fly.svg" width="28px" height="28px"></p>
+          <p>Почувствуйте комфорт современного Boeing 747-300</p>
+          </div>
+        <img data-slidr="two" src="img/slider.jpg" />
+        <img data-slidr="three" src="img/slider.jpg" />
+      </div>
+    </div>
   </main>
   <footer>
   </footer>
   <script src="js/popup.js"></script>
-  
+  <script type="text/javascript" src="js/slidr.js"></script>
 </body>
 
 </html>
+<!-- data-slidr="one"  -->

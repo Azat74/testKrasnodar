@@ -86,3 +86,39 @@ breadcrumb3.addEventListener("click", function(event){
     }
 
 });
+
+
+navMenuPoint1.addEventListener("click", function(event){
+  event.preventDefault();
+  navMenuPoint1.classList.add("nav-menu__point-active");
+  
+  if (navMenuPoint2.classList.contains("nav-menu__point-active")) {
+      navMenuPoint2.classList.remove("nav-menu__point-active");
+    }
+  if (navMenuPoint3.classList.contains("nav-menu__point-active")) {
+      navMenuPoint3.classList.remove("nav-menu__point-active");
+    }
+
+});
+
+navMenuPoint2.addEventListener("click", function(event){
+  event.preventDefault();
+  navMenuPoint2.classList.add("nav-menu__point-active");
+  if (navMenuPoint1.classList.contains("nav-menu__point-active")) {
+      navMenuPoint1.classList.remove("nav-menu__point-active");
+    }
+  if (navMenuPoint3.classList.contains("nav-menu__point-active")) {
+      navMenuPoint3.classList.remove("nav-menu__point-active");
+    }
+});
+
+navMenuPoint3.addEventListener("click", function(event){
+  event.preventDefault();
+  navMenuPoint3.classList.add("nav-menu__point-active");
+  if (navMenuPoint1.classList.contains("nav-menu__point-active")) {
+      navMenuPoint1.classList.remove("nav-menu__point-active");
+    }
+  if (navMenuPoint2.classList.contains("nav-menu__point-active")) {
+      navMenuPoint2.classList.remove("nav-menu__point-active");
+    }
+});
