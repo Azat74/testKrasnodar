@@ -1,6 +1,7 @@
 html, body {
   font-family: 'PT Sans', sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+  max-width: 99.7%; }
 
 @viewport {
   width: device-width;
@@ -21,7 +22,11 @@ div {
   -ms-margin-before: 0;
   -ms-margin-after: 0;
   -ms-margin-start: 0;
-  -ms-margin-end: 0; }
+  -ms-margin-end: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0; }
 
 .nav-menu__logo {
   position: absolute;
@@ -215,7 +220,8 @@ div {
 .nav-menu__point-header {
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: center; }
 
 @media (min-width: 1200px) {
   .nav-menu__point-header {
@@ -293,17 +299,22 @@ div {
     font-size: 48px;
     color: white;
     margin-top: 220px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 0; }
   #slidr-id p:nth-child(2) {
     font-size: 76px;
-    color: white; }
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0; }
     #slidr-id p:nth-child(2) img {
       position: relative;
       top: -25px;
       left: -10px; }
   #slidr-id p:nth-child(3) {
     font-size: 14px;
-    color: white; }
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0; }
 
 .slidr__content {
   display: block;
